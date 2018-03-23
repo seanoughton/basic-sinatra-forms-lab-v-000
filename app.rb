@@ -9,7 +9,7 @@ class App < Sinatra::Base
 
   post '/newteam' do
     @name = params["name"]
-    @c = params["c"]
+    @c = params[:c]
     @pg = params["pg"]
     @sg = params["sg"]
     @sf = params["sf"]
