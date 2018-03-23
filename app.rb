@@ -8,12 +8,12 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @coach = params[:coach]
+    @coach = params["coach"]
     @point_guard =
     @shooting_guard =
     @small_forward =
     @power_forward =
-    @center = 
+    @center =
     erb :team
   end
 
