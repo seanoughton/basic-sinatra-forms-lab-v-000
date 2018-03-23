@@ -14,7 +14,7 @@ class App < Sinatra::Base
     @sg = params["sg"]
     @sf = params["sf"]
     @pf = params["pf"]
-    @center =params["c"]
+    @c =params["c"]
     erb :team
   end
 
